@@ -1,0 +1,11 @@
+{
+    "$schema": "https://typedoc-plugin-markdown.org/schema.json",
+    "entryPoints": ["./src/index.ts"],
+    "includeVersion": true,
+    "out": "./../../apis/core",
+    "cleanOutputDir": true,
+    "plugin": ["typedoc-plugin-markdown", "./../../scripts/insert-link.js"],
+    "hidePageHeader": true,
+    "useCodeBlocks": true,
+    "indexFormat": "table"
+}

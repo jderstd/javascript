@@ -1,0 +1,87 @@
+[< Back](./../../README.md)
+
+# JDER core
+
+A standard response builder. 
+
+Compatible with all TypeScript/JavaScript frameworks with standard Response API.
+
+## Installation
+
+Install this package as a dependency in the project:
+
+```sh
+# npm
+npm i @jderjs/core
+
+# Yarn
+yarn add @jderjs/core
+
+# pnpm
+pnpm add @jderjs/core
+
+# Deno
+deno add npm:@jderjs/core
+
+# Bun
+bun add @jderjs/core
+```
+
+## Create a Success JSON Response
+
+To create a JSON response without data, just use `createJsonResponse` function:
+
+```ts
+import { createJsonResponse } from "@jderjs/core";
+
+const route = (): Response => {
+    return createJsonResponse();
+}
+```
+
+Or insert data to the response:
+
+```ts
+import { createJsonResponse } from "@jderjs/core";
+
+const route = (): Response => {
+    return createJsonResponse({
+        data: "Hello, World!",
+    });
+}
+```
+
+## Create a Failure JSON response
+
+To create a failure JSON response, add `success: false` to the options:
+
+```ts
+import { createJsonResponse } from "@jderjs/core";
+
+const route = (): Response => {
+    return createJsonResponse({
+        success: false,
+        error: {
+            code: "server",
+        },
+    });
+}
+```
+
+## Create a Non-JSON response
+
+To create a non-JSON response, use `createResponse` function:
+
+```ts
+import { createResponse } from "@jderjs/core";
+
+const route = (): Response => {
+    return createResponse({
+        status: 404,
+        headers: {
+            "Content-Type": "text/plain",
+        },
+        body: "Not Found",
+    });
+}
+```

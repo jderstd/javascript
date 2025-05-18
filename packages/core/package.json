@@ -1,0 +1,40 @@
+{
+    "name": "@jderjs/core",
+    "version": "0.1.0",
+    "description": "A standard response builder",
+    "keywords": [
+        "jder",
+        "core",
+        "response",
+        "ts",
+        "typescript",
+        "js",
+        "javascript"
+    ],
+    "homepage": "https://github.com/alpheustangs/jder.js",
+    "bugs": "https://github.com/alpheustangs/jder.js/issues",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/alpheustangs/jder.js.git",
+        "directory": "packages/core"
+    },
+    "license": "MIT",
+    "author": "Alpheus Tang",
+    "exports": {
+        ".": {
+            "types": "./dist/index.d.ts",
+            "import": "./dist/index.mjs",
+            "require": "./dist/index.js"
+        },
+        "./internal": {
+            "types": "./dist/internal.d.ts",
+            "import": "./dist/internal.mjs",
+            "require": "./dist/internal.js"
+        },
+        "./package.json": "./package.json"
+    },
+    "main": "./dist/index.js",
+    "module": "./dist/index.mjs",
+    "types": "./dist/index.d.ts",
+    "files": ["dist"]
+}
