@@ -1,11 +1,11 @@
 import { getConnInfo } from "@hono/node-server/conninfo";
 import { serveStatic } from "@hono/node-server/serve-static";
 import { bodyLimit } from "@jderjs/hono/body-limit";
+import { ipLimit } from "@jderjs/hono/ip-limit";
 import { timeLimit } from "@jderjs/hono/time-limit";
 import { Hono } from "hono";
 import { cors } from "hono/cors";
 
-import { ipLimit } from "@jderjs/hono/ip-limit";
 import { PUBLIC } from "#/configs";
 import { router } from "#/router";
 
