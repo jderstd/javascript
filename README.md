@@ -24,13 +24,13 @@ please refer to the [Core Documentation](./docs/core/README.md).
 For integration with Hono,
 please refer to the [Hono Documentation](./docs/hono/README.md).
 
-## API References
+## APIs
 
 For core package APIs, 
-please refer to the [Core API Reference](./apis/core/README.md).
+please refer to the [Core APIs](./apis/core/README.md).
 
 For Hono package APIs, 
-please refer to the [Hono API Reference](./apis/hono/README.md).
+please refer to the [Hono APIs](./apis/hono/README.md).
 
 ## License
 
