@@ -11,11 +11,11 @@
         "js",
         "javascript"
     ],
-    "homepage": "https://github.com/alpheustangs/jder.js",
-    "bugs": "https://github.com/alpheustangs/jder.js/issues",
+    "homepage": "https://github.com/jder-std/javascript",
+    "bugs": "https://github.com/jder-std/javascript/issues",
     "repository": {
         "type": "git",
-        "url": "https://github.com/alpheustangs/jder.js.git",
+        "url": "https://github.com/jder-std/javascript.git",
         "directory": "packages/hono"
     },
     "license": "MIT",
