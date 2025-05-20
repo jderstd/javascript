@@ -1,6 +1,6 @@
 [< Back](./../README.md)
 
-# JDER core
+# JDER Core
 
 A standard response builder. 
 

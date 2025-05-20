@@ -1,4 +1,4 @@
-# JDER
+# JDER Core
 
 A response builder for JavaScript / TypeScript.
 
