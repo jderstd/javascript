@@ -1,6 +1,6 @@
 [< Back](./../README.md)
 
-# @jderjs/core v0.1.0
+# @jderjs/core v0.1.1
 
 ## Type Aliases
 

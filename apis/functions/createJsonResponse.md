@@ -6,7 +6,7 @@
 function createJsonResponse<D>(options?): Response;
 ```
 
-Defined in: json/index.ts:151
+Defined in: [json/index.ts:151](https://github.com/jder-std/core.js/blob/8f752d1679b827b4deb2cd21184bd81491ea8d2c/package/src/response/json/index.ts#L151)
 
 Create a JSON response.
 
