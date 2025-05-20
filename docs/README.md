@@ -1,4 +1,4 @@
-[< Back](./../../README.md)
+[< Back](./../README.md)
 
 # JDER core
 
@@ -37,6 +37,10 @@ import { createJsonResponse } from "@jderjs/core";
 const route = (): Response => {
     return createJsonResponse();
 }
+
+// {
+//     "success": true
+// }
 ```
 
 Or insert data to the response:
@@ -49,6 +53,11 @@ const route = (): Response => {
         data: "Hello, World!",
     });
 }
+
+// {
+//     "success": true,
+//     "data": "Hello, World!"
+// }
 ```
 
 ## Create a Failure JSON response
@@ -66,6 +75,13 @@ const route = (): Response => {
         },
     });
 }
+
+// {
+//     "success": false,
+//     "error": {
+//         "code": "server"
+//     }
+// }
 ```
 
 ## Create a Non-JSON response

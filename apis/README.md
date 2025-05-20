@@ -1,8 +1,6 @@
-[@jderjs/hono](../README.md) / Response
+[< Back](./../README.md)
 
-# Response
-
-Response module
+# @jderjs/core v0.1.0
 
 ## Type Aliases
 
