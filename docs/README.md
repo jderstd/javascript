@@ -37,13 +37,19 @@ import { createJsonResponse } from "@jderjs/core";
 const route = (): Response => {
     return createJsonResponse();
 }
-
-// {
-//     "success": true
-// }
 ```
 
-Or insert data to the response:
+And the response will be shown as below:
+
+```json
+{
+    "success": true
+}
+```
+
+## Create a Success JSON Response with Data
+
+The `createJsonResponse` function can also be used to insert data to the response:
 
 ```ts
 import { createJsonResponse } from "@jderjs/core";
@@ -53,11 +59,15 @@ const route = (): Response => {
         data: "Hello, World!",
     });
 }
+```
 
-// {
-//     "success": true,
-//     "data": "Hello, World!"
-// }
+And the response will be shown as below:
+
+```json
+{
+    "success": true,
+    "data": "Hello, World!"
+}
 ```
 
 ## Create a Failure JSON response
@@ -75,13 +85,17 @@ const route = (): Response => {
         },
     });
 }
+```
 
-// {
-//     "success": false,
-//     "error": {
-//         "code": "server"
-//     }
-// }
+And the response will be shown as below:
+
+```json
+{
+    "success": false,
+    "error": {
+        "code": "server"
+    }
+}
 ```
 
 ## Create a Non-JSON response
