@@ -68,13 +68,9 @@ type JsonResponseStruct<D = unknown> = {
 const createJsonResponseStruct = <D = unknown>(
     options?: CreateJsonResponseStructOptions<D>,
 ): JsonResponseStruct<D> => {
-    let status: number;
+    let status: number = options?.success === false ? 400 : 200;
 
-    if (options?.success === false) {
-        status = options.status ?? 400;
-    } else {
-        status = options?.status ?? 200;
-    }
+    if (options?.status) status = options.status;
 
     const headers: [string, string][] = mergeHeaders(options?.headers, [
         ["Content-Type", "application/json"],

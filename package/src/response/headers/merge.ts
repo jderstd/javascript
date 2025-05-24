@@ -1,24 +1,24 @@
 const mergeHeaders = (
-    ...headers: (HeadersInit | undefined)[]
+    ...headersArray: (HeadersInit | undefined)[]
 ): [string, string][] => {
-    const result = new Map<string, string>();
+    const result: Map<string, string> = new Map<string, string>();
 
-    for (const h of headers) {
-        if (!h) continue;
+    for (const headers of headersArray) {
+        if (!headers) continue;
 
-        if (h instanceof Headers) {
-            for (const [key, value] of h) {
+        if (headers instanceof Headers) {
+            for (const [key, value] of headers) {
                 result.set(key, value);
             }
-        } else if (Array.isArray(h)) {
-            for (let i: number = 0; i < h.length; i++) {
-                const [key, value] = h[i] as [string, string];
+        } else if (Array.isArray(headers)) {
+            for (let i: number = 0; i < headers.length; i++) {
+                const [key, value] = headers[i] as [string, string];
                 result.set(key, value);
             }
         } else {
-            for (const key in h) {
-                if (Object.prototype.hasOwnProperty.call(h, key)) {
-                    result.set(key, h[key] ?? "");
+            for (const key in headers) {
+                if (Object.prototype.hasOwnProperty.call(headers, key)) {
+                    result.set(key, headers[key] ?? "");
                 }
             }
         }
