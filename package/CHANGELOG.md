@@ -1,3 +1,10 @@
+## 0.1.2
+
+### What's Changed
+
+- Optimization
+- Update documentation
+
 ## 0.1.1 (2025-05-20)
 
 ### What's Changed
