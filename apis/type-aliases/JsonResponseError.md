@@ -6,7 +6,7 @@
 type JsonResponseError = object;
 ```
 
-Defined in: [json/index.ts:4](https://github.com/jder-std/core.js/blob/8f752d1679b827b4deb2cd21184bd81491ea8d2c/package/src/response/json/index.ts#L4)
+Defined in: [json/index.ts:4](https://github.com/jder-std/core.js/blob/df16f6474437d321209268c15546284823cc2253/package/src/response/json/index.ts#L4)
 
 JSON response error.
 
@@ -18,7 +18,7 @@ JSON response error.
 code: string;
 ```
 
-Defined in: [json/index.ts:6](https://github.com/jder-std/core.js/blob/8f752d1679b827b4deb2cd21184bd81491ea8d2c/package/src/response/json/index.ts#L6)
+Defined in: [json/index.ts:6](https://github.com/jder-std/core.js/blob/df16f6474437d321209268c15546284823cc2253/package/src/response/json/index.ts#L6)
 
 Error code.
 
@@ -30,7 +30,7 @@ Error code.
 optional field: string;
 ```
 
-Defined in: [json/index.ts:8](https://github.com/jder-std/core.js/blob/8f752d1679b827b4deb2cd21184bd81491ea8d2c/package/src/response/json/index.ts#L8)
+Defined in: [json/index.ts:8](https://github.com/jder-std/core.js/blob/df16f6474437d321209268c15546284823cc2253/package/src/response/json/index.ts#L8)
 
 Field of the error.
 
@@ -42,6 +42,6 @@ Field of the error.
 optional message: string;
 ```
 
-Defined in: [json/index.ts:10](https://github.com/jder-std/core.js/blob/8f752d1679b827b4deb2cd21184bd81491ea8d2c/package/src/response/json/index.ts#L10)
+Defined in: [json/index.ts:10](https://github.com/jder-std/core.js/blob/df16f6474437d321209268c15546284823cc2253/package/src/response/json/index.ts#L10)
 
 Message of the error.
