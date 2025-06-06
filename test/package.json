@@ -7,6 +7,10 @@
         "": ""
     },
     "dependencies": {
-        "@jderjs/core": "workspace:~"
+        "@jderjs/core": "workspace:~",
+        "vitest": "^3.2.2"
+    },
+    "devDependencies": {
+        "vite": "^6.3.5"
     }
 }
