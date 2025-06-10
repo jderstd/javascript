@@ -9,8 +9,5 @@
     "dependencies": {
         "@jderjs/core": "workspace:~",
         "vitest": "^3.2.3"
-    },
-    "devDependencies": {
-        "vite": "^6.3.5"
     }
 }

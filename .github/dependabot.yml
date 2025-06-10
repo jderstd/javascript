@@ -14,5 +14,4 @@ updates:
           - dependency-name: "typedoc"
           - dependency-name: "typedoc-plugin-markdown"
           - dependency-name: "typescript"
-          - dependency-name: "vite"
           - dependency-name: "vitest"
