@@ -1,17 +1,17 @@
 [@jderjs/core](../README.md) / CreateResponseOptions
 
-# Type Alias: CreateResponseOptions\<D\>
+# Type Alias: CreateResponseOptions\<B\>
 
 ```ts
-type CreateResponseOptions<D> = CreateResponseStructOptions<D>;
+type CreateResponseOptions<B> = CreateResponseStructOptions<B>;
 ```
 
-Defined in: [index.ts:40](https://github.com/jder-std/core.js/blob/df16f6474437d321209268c15546284823cc2253/package/src/response/index.ts#L40)
+Defined in: [index.ts:40](https://github.com/jder-std/core.js/blob/fa462a6e8ab33376a6e8f900daa78e7126f02f40/package/src/response/index.ts#L40)
 
 Options of `createResponse` function.
 
 ## Type Parameters
 
-### D
+### B
 
-`D` *extends* `BodyInit`
+`B` *extends* `BodyInit` = `BodyInit`

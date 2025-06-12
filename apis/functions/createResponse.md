@@ -3,10 +3,10 @@
 # Function: createResponse()
 
 ```ts
-function createResponse<D>(options?): Response;
+function createResponse<B>(options?): Response;
 ```
 
-Defined in: [index.ts:73](https://github.com/jder-std/core.js/blob/df16f6474437d321209268c15546284823cc2253/package/src/response/index.ts#L73)
+Defined in: [index.ts:74](https://github.com/jder-std/core.js/blob/fa462a6e8ab33376a6e8f900daa78e7126f02f40/package/src/response/index.ts#L74)
 
 Create a response.
 
@@ -40,15 +40,15 @@ const route = (): Response => {
 
 ## Type Parameters
 
-### D
+### B
 
-`D` *extends* `BodyInit` = `BodyInit`
+`B` *extends* `BodyInit` = `BodyInit`
 
 ## Parameters
 
 ### options?
 
-[`CreateResponseOptions`](../type-aliases/CreateResponseOptions.md)\<`D`\>
+[`CreateResponseOptions`](../type-aliases/CreateResponseOptions.md)\<`B`\>
 
 ## Returns
 
