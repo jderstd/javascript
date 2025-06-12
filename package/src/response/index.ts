@@ -1,6 +1,6 @@
 import { mergeHeaders } from "#/response/headers/merge";
 
-type CreateResponseStructOptions<D extends BodyInit = BodyInit> = {
+type CreateResponseStructOptions<B extends BodyInit = BodyInit> = {
     /**
      * Status code of the response.
      * By default, it is `200`.
@@ -13,7 +13,7 @@ type CreateResponseStructOptions<D extends BodyInit = BodyInit> = {
     /**
      * Body of the response.
      */
-    body?: D;
+    body?: B;
 };
 
 /** Response structure. */
@@ -70,8 +70,8 @@ type CreateResponseOptions<D extends BodyInit> = CreateResponseStructOptions<D>;
  * };
  * ```
  */
-const createResponse = <D extends BodyInit = BodyInit>(
-    options?: CreateResponseOptions<D>,
+const createResponse = <B extends BodyInit = BodyInit>(
+    options?: CreateResponseOptions<B>,
 ): Response => {
     const { status, headers, body } = createResponseStruct(options);
 
