@@ -26,7 +26,7 @@ type ResponseStruct<B = unknown> = {
     body?: B;
 };
 
-const createResponseStruct = <B extends BodyInit>(
+const createResponseStruct = <B extends BodyInit = BodyInit>(
     options?: CreateResponseStructOptions<B>,
 ): ResponseStruct<B> => {
     return {
@@ -37,7 +37,8 @@ const createResponseStruct = <B extends BodyInit>(
 };
 
 /** Options of `createResponse` function. */
-type CreateResponseOptions<D extends BodyInit> = CreateResponseStructOptions<D>;
+type CreateResponseOptions<B extends BodyInit = BodyInit> =
+    CreateResponseStructOptions<B>;
 
 /**
  * Create a response.
