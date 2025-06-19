@@ -1,11 +1,9 @@
 export type { CreateResponseOptions } from "#/response";
-
-export { createResponse } from "#/response";
-
 export type {
-    JsonResponseError,
-    JsonResponse,
     CreateJsonResponseOptions,
+    JsonResponse,
+    JsonResponseError,
 } from "#/response/json";
 
+export { createResponse } from "#/response";
 export { createJsonResponse } from "#/response/json";

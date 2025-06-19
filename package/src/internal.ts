@@ -2,16 +2,13 @@ export type {
     CreateResponseStructOptions,
     ResponseStruct,
 } from "#/response";
-
-export { createResponseStruct } from "#/response";
-
 export type {
-    JsonResponseError,
-    JsonResponse,
     CreateJsonResponseStructOptions,
+    JsonResponse,
+    JsonResponseError,
     JsonResponseStruct,
 } from "#/response/json";
 
-export { createJsonResponseStruct } from "#/response/json";
-
+export { createResponseStruct } from "#/response";
 export { mergeHeaders } from "#/response/headers/merge";
+export { createJsonResponseStruct } from "#/response/json";

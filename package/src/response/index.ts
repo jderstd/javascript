@@ -21,7 +21,10 @@ type ResponseStruct<B = unknown> = {
     /** Status code of the response. */
     status: number;
     /** Headers of the response. */
-    headers: [string, string][];
+    headers: [
+        string,
+        string,
+    ][];
     /** Body of the response. */
     body?: B;
 };

@@ -60,7 +60,10 @@ type JsonResponseStruct<D = unknown> = {
     /** Status code of the response. */
     status: number;
     /** Headers of the response. */
-    headers: [string, string][];
+    headers: [
+        string,
+        string,
+    ][];
     /** JSON response. */
     json: JsonResponse<D>;
 };
@@ -72,8 +75,14 @@ const createJsonResponseStruct = <D = unknown>(
 
     if (options?.status) status = options.status;
 
-    const headers: [string, string][] = mergeHeaders(options?.headers, [
-        ["Content-Type", "application/json"],
+    const headers: [
+        string,
+        string,
+    ][] = mergeHeaders(options?.headers, [
+        [
+            "Content-Type",
+            "application/json",
+        ],
     ]);
 
     let json: JsonResponse<D>;
