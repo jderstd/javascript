@@ -1,6 +1,9 @@
 const mergeHeaders = (
     ...headersArray: (HeadersInit | undefined)[]
-): [string, string][] => {
+): [
+    string,
+    string,
+][] => {
     const result: Map<string, string> = new Map<string, string>();
 
     for (const headers of headersArray) {
@@ -12,12 +15,15 @@ const mergeHeaders = (
             }
         } else if (Array.isArray(headers)) {
             for (let i: number = 0; i < headers.length; i++) {
-                const [key, value] = headers[i] as [string, string];
+                const [key, value] = headers[i] as [
+                    string,
+                    string,
+                ];
                 result.set(key, value);
             }
         } else {
             for (const key in headers) {
-                if (Object.prototype.hasOwnProperty.call(headers, key)) {
+                if (Object.hasOwn(headers, key)) {
                     result.set(key, headers[key] ?? "");
                 }
             }
