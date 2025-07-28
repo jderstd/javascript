@@ -1,3 +1,9 @@
+## Next
+
+### What's Changed
+
+- Internal API changes
+
 ## 0.1.3 (2025-06-12)
 
 ### What's Changed

@@ -29,10 +29,20 @@
             "import": "./dist/index.mjs",
             "require": "./dist/index.js"
         },
-        "./internal": {
-            "types": "./dist/internal.d.ts",
-            "import": "./dist/internal.mjs",
-            "require": "./dist/internal.js"
+        "./response/common/struct": {
+            "types": "./dist/response/common/struct.d.ts",
+            "import": "./dist/response/common/struct.mjs",
+            "require": "./dist/response/common/struct.js"
+        },
+        "./response/json/struct": {
+            "types": "./dist/response/json/struct.d.ts",
+            "import": "./dist/response/json/struct.mjs",
+            "require": "./dist/response/json/struct.js"
+        },
+        "./response/headers/merge": {
+            "types": "./dist/response/headers/merge.d.ts",
+            "import": "./dist/response/headers/merge.mjs",
+            "require": "./dist/response/headers/merge.js"
         },
         "./package.json": "./package.json"
     },
