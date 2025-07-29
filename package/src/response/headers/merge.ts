@@ -1,3 +1,6 @@
+import type { HeaderTuple } from "#/@types/response";
+
+/** Merge headers. */
 const mergeHeaders = (
     ...headersArray: (HeadersInit | undefined)[]
 ): [
@@ -15,10 +18,7 @@ const mergeHeaders = (
             }
         } else if (Array.isArray(headers)) {
             for (let i: number = 0; i < headers.length; i++) {
-                const [key, value] = headers[i] as [
-                    string,
-                    string,
-                ];
+                const [key, value] = headers[i] as HeaderTuple;
                 result.set(key, value);
             }
         } else {

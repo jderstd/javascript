@@ -33,14 +33,13 @@ type CreateJsonResponseOptions<D = unknown> =
  * }
  * ```
  *
- * Example for creating a failed JSON response:
+ * Example for creating a failure JSON response:
  *
  * ```ts
  * import { createJsonResponse } from "@jderjs/core";
  *
  * const route = (): Response => {
  *     return createJsonResponse({
- *         success: false,
  *         error: {
  *             code: "server",
  *             message: "Internal server error",

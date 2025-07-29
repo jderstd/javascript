@@ -1,4 +1,5 @@
 export type {
+    HeaderTuple,
     JsonResponse,
     JsonResponseError,
 } from "#/@types/response";

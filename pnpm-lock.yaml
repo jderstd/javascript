@@ -30,7 +30,11 @@ importers:
         specifier: ^5.8.3
         version: 5.8.3
 
-  package: {}
+  package:
+    dependencies:
+      ts-vista:
+        specifier: ^0.2.2
+        version: 0.2.2
 
   test:
     dependencies:
@@ -817,6 +821,9 @@ packages:
     resolution: {integrity: sha512-t2T/WLB2WRgZ9EpE4jgPJ9w+i66UZfDc8wHh0xrwiRNN+UwH98GIJkTeZqX9rg0i0ptwzqW+uYeIF0T4F8LR7A==}
     engines: {node: '>=14.0.0'}
 
+  ts-vista@0.2.2:
+    resolution: {integrity: sha512-QhuUrGs8WwGgHy1iUOfMztvLE0XB3EH4hFjw6rFGpStav5os7keIx9EHfJTBSpaPdlE3MmGBwVFAbTjDjROFuQ==}
+
   tsdown@0.13.0:
     resolution: {integrity: sha512-+1ZqbLIYDAiNxtAvq9RsTg55PRvaMxGmtvRFBW2J+i4GfDKiyHAkxez1eB3EPvHG1Z917nsf2madsSeblJS3GA==}
     engines: {node: '>=20.19.0'}
@@ -1586,6 +1593,8 @@ snapshots:
   tinyrainbow@2.0.0: {}
 
   tinyspy@4.0.3: {}
+
+  ts-vista@0.2.2: {}
 
   tsdown@0.13.0(typescript@5.8.3):
     dependencies:

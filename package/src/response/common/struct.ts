@@ -1,5 +1,8 @@
+import type { HeaderTuple } from "#/@types/response";
+
 import { mergeHeaders } from "#/response/headers/merge";
 
+/** Options of `createResponseStruct` function. */
 type CreateResponseStructOptions<B extends BodyInit = BodyInit> = {
     /**
      * Status code of the response.
@@ -21,14 +24,12 @@ type ResponseStruct<B = unknown> = {
     /** Status code of the response. */
     status: number;
     /** Headers of the response. */
-    headers: [
-        string,
-        string,
-    ][];
+    headers: HeaderTuple[];
     /** Body of the response. */
     body?: B;
 };
 
+/** Create a response structure. */
 const createResponseStruct = <B extends BodyInit = BodyInit>(
     options?: CreateResponseStructOptions<B>,
 ): ResponseStruct<B> => {

@@ -2,6 +2,7 @@
 
 ### What's Changed
 
+- Allow to skip `success: false` for failure response
 - Internal API changes
 
 ## 0.1.3 (2025-06-12)
