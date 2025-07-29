@@ -1,3 +1,9 @@
+/** Header tuple. */
+type HeaderTuple = [
+    string,
+    string,
+];
+
 /** JSON response error. */
 type JsonResponseError = {
     /** Error code. */
@@ -18,4 +24,4 @@ type JsonResponse<D = unknown> = {
     error?: JsonResponseError;
 };
 
-export type { JsonResponseError, JsonResponse };
+export type { HeaderTuple, JsonResponseError, JsonResponse };

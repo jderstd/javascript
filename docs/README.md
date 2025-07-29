@@ -79,7 +79,6 @@ import { createJsonResponse } from "@jderjs/core";
 
 const route = (): Response => {
     return createJsonResponse({
-        success: false,
         error: {
             code: "server",
         },
