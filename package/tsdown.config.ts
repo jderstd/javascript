@@ -9,7 +9,7 @@ const options: Options = {
         // internal
         "response/common/struct": "./src/response/common/struct.ts",
         "response/json/struct": "./src/response/json/struct.ts",
-        "response/headers/merge": "./src/response/headers/merge.ts",
+        "functions/merge-headers": "./src/functions/merge-headers.ts",
     },
     dts: false,
     outDir: "./dist",

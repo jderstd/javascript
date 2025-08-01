@@ -6,7 +6,7 @@ import type {
     JsonResponseError,
 } from "#/@types/response";
 
-import { mergeHeaders } from "#/response/headers/merge";
+import { mergeHeaders } from "#/functions/merge-headers";
 
 type CreateJsonSuccessResponseStructOptions<D = unknown> = {
     /**
