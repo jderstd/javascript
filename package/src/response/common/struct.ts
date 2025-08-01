@@ -1,6 +1,6 @@
 import type { HeaderTuple } from "#/@types/response";
 
-import { mergeHeaders } from "#/response/headers/merge";
+import { mergeHeaders } from "#/functions/merge-headers";
 
 /** Options of `createResponseStruct` function. */
 type CreateResponseStructOptions<B extends BodyInit = BodyInit> = {

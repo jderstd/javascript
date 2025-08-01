@@ -39,10 +39,10 @@
             "import": "./dist/response/json/struct.mjs",
             "require": "./dist/response/json/struct.js"
         },
-        "./response/headers/merge": {
-            "types": "./dist/response/headers/merge.d.ts",
-            "import": "./dist/response/headers/merge.mjs",
-            "require": "./dist/response/headers/merge.js"
+        "./functions/merge-headers": {
+            "types": "./dist/functions/merge-headers.d.ts",
+            "import": "./dist/functions/merge-headers.mjs",
+            "require": "./dist/functions/merge-headers.js"
         },
         "./package.json": "./package.json"
     },
