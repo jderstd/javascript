@@ -6,7 +6,7 @@
 function createJsonResponse<D>(options?): Response;
 ```
 
-Defined in: [json/index.ts:147](https://github.com/jder-std/core.js/blob/fa462a6e8ab33376a6e8f900daa78e7126f02f40/package/src/response/json/index.ts#L147)
+Defined in: [response/json/index.ts:51](https://github.com/jder-std/core.js/blob/ccb6f2fa28b92969dcb767a05c1efbaf6bcd3154/package/src/response/json/index.ts#L51)
 
 Create a JSON response.
 
@@ -34,14 +34,13 @@ const route = (): Response => {
 }
 ```
 
-Example for creating a failed JSON response:
+Example for creating a failure JSON response:
 
 ```ts
 import { createJsonResponse } from "@jderjs/core";
 
 const route = (): Response => {
     return createJsonResponse({
-        success: false,
         error: {
             code: "server",
             message: "Internal server error",
