@@ -8,6 +8,10 @@ tsdown := node_bin + "tsdown"
 vitest := node_bin + "vitest"
 typedoc := node_bin + "typedoc"
 
+pkg := "package"
+
+tst := "test"
+
 # Default action
 _:
     just lint
@@ -28,7 +32,7 @@ setup:
 lint:
     ls-lint
     typos
-    cd package && ../{{tsc}} --noEmit
+    cd ./{{pkg}} && ../{{tsc}} --noEmit
 
 # Format code
 fmt:
@@ -36,21 +40,37 @@ fmt:
 
 # Build package
 build:
-    cd package && ../{{tsdown}} -c tsdown.config.ts
+    cd ./{{pkg}} && ../{{tsdown}} -c tsdown.config.ts
 
 # Run tests
 test:
-    cd test && ./{{vitest}} run
+    cd ./{{tst}} && ./{{vitest}} run
 
 # Run tests with different runtimes
 test-all:
-    cd test && pnpm run test
-    cd test && deno run test
-    cd test && bun run test
+    cd ./{{tst}} && pnpm run test
+    cd ./{{tst}} && deno run test
+    cd ./{{tst}} && bun run test
 
 # Generate APIs documentation
 api:
-    cd package && ../{{typedoc}}
+    cd ./{{pkg}} && ../{{typedoc}}
+
+# Publish package with dev tag as dry-run
+publish-dev-try:
+    cd ./{{pkg}} && pnpm publish --no-git-checks --tag dev --dry-run
+
+# Publish package with dev tag
+publish-dev:
+    cd ./{{pkg}} && pnpm publish --no-git-checks --tag dev
+
+# Publish package as dry-run
+publish-try:
+    cd ./{{pkg}} && pnpm publish --dry-run
+
+# Publish package
+publish:
+    cd ./{{pkg}} && pnpm publish
 
 # Clean builds
 clean:
@@ -59,6 +79,6 @@ clean:
 # Clean everything
 clean-all:
     rm -rf ./node_modules
-    rm -rf ./package/node_modules
-    rm -rf ./test/node_modules
+    rm -rf ./{{pkg}}/node_modules
+    rm -rf ./{{tst}}/node_modules
     just clean
