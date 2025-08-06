@@ -6,7 +6,7 @@
 type JsonResponse<D> = object;
 ```
 
-Defined in: [json/index.ts:14](https://github.com/jder-std/core.js/blob/fa462a6e8ab33376a6e8f900daa78e7126f02f40/package/src/response/json/index.ts#L14)
+Defined in: [@types/response.ts:18](https://github.com/jder-std/core.js/blob/ccb6f2fa28b92969dcb767a05c1efbaf6bcd3154/package/src/@types/response.ts#L18)
 
 JSON response.
 
@@ -24,7 +24,7 @@ JSON response.
 optional data: D;
 ```
 
-Defined in: [json/index.ts:18](https://github.com/jder-std/core.js/blob/fa462a6e8ab33376a6e8f900daa78e7126f02f40/package/src/response/json/index.ts#L18)
+Defined in: [@types/response.ts:22](https://github.com/jder-std/core.js/blob/ccb6f2fa28b92969dcb767a05c1efbaf6bcd3154/package/src/@types/response.ts#L22)
 
 Data for the response when `success` is `true`.
 
@@ -36,7 +36,7 @@ Data for the response when `success` is `true`.
 optional error: JsonResponseError;
 ```
 
-Defined in: [json/index.ts:20](https://github.com/jder-std/core.js/blob/fa462a6e8ab33376a6e8f900daa78e7126f02f40/package/src/response/json/index.ts#L20)
+Defined in: [@types/response.ts:24](https://github.com/jder-std/core.js/blob/ccb6f2fa28b92969dcb767a05c1efbaf6bcd3154/package/src/@types/response.ts#L24)
 
 Error for the response when `success` is `false`.
 
@@ -48,6 +48,6 @@ Error for the response when `success` is `false`.
 success: boolean;
 ```
 
-Defined in: [json/index.ts:16](https://github.com/jder-std/core.js/blob/fa462a6e8ab33376a6e8f900daa78e7126f02f40/package/src/response/json/index.ts#L16)
+Defined in: [@types/response.ts:20](https://github.com/jder-std/core.js/blob/ccb6f2fa28b92969dcb767a05c1efbaf6bcd3154/package/src/@types/response.ts#L20)
 
 Whether the response is successful.

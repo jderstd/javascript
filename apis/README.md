@@ -1,6 +1,6 @@
 [< Back](./../README.md)
 
-# @jderjs/core v0.1.3
+# @jderjs/core v0.2.0
 
 ## Type Aliases
 
@@ -8,6 +8,7 @@
 | ------ | ------ |
 | [CreateJsonResponseOptions](type-aliases/CreateJsonResponseOptions.md) | Options of `createJsonResponse` function. |
 | [CreateResponseOptions](type-aliases/CreateResponseOptions.md) | Options of `createResponse` function. |
+| [HeaderTuple](type-aliases/HeaderTuple.md) | Header tuple. |
 | [JsonResponse](type-aliases/JsonResponse.md) | JSON response. |
 | [JsonResponseError](type-aliases/JsonResponseError.md) | JSON response error. |
 
