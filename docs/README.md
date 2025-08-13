@@ -72,7 +72,7 @@ And the response will be shown as below:
 
 ## Create a Failure JSON response
 
-To create a failure JSON response, add `error` field to the options:
+To create a failure JSON response, add `errors` field to the options:
 
 ```ts
 import { createJsonResponse } from "@jderjs/core";
