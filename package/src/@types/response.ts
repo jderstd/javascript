@@ -6,22 +6,22 @@ type HeaderTuple = [
 
 /** JSON response error. */
 type JsonResponseError = {
-    /** Error code. */
+    /** Code representing the error. */
     code: string;
-    /** Field of the error. */
-    field?: string;
-    /** Message of the error. */
+    /** Indicates where the error occurred. */
+    path?: string[];
+    /** Detail of the error. */
     message?: string;
 };
 
 /** JSON response. */
 type JsonResponse<D = unknown> = {
-    /** Whether the response is successful. */
+    /** Indicates whether the response is successful or not. */
     success: boolean;
-    /** Data for the response when `success` is `true`. */
+    /** Requested information for the response when `success` is `true`. */
     data?: D;
-    /** Error for the response when `success` is `false`. */
-    error?: JsonResponseError;
+    /** A list of errors for the response when `success` is `false`. */
+    errors?: JsonResponseError[];
 };
 
 export type { HeaderTuple, JsonResponseError, JsonResponse };

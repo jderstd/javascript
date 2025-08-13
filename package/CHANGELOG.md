@@ -1,3 +1,34 @@
+## 0.3.0
+
+### Breaking Changes
+
+- Support new standard
+
+### Migrating from 0.2.0 to 0.3.0
+
+```diff
+import {
+    createJsonResponse,
+} from "@jderjs/core";
+
+const route = (): Response => {
+    return createJsonResponse({
+-       error: {
+-           code: "parse",
+-           field: "title",
+-           message: "Invalid title",
+-       },
++       errors: [
++           {
++               code: "parse",
++               path: ["json", "title"],
++               message: "Invalid title",
++           }
++       ],
+    });
+}
+```
+
 ## 0.2.0 (2025-08-06)
 
 ### What's Changed

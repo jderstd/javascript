@@ -79,9 +79,11 @@ import { createJsonResponse } from "@jderjs/core";
 
 const route = (): Response => {
     return createJsonResponse({
-        error: {
-            code: "server",
-        },
+        errors: [
+            {
+                code: "server",
+            },
+        ],
     });
 }
 ```
@@ -91,9 +93,11 @@ And the response will be shown as below:
 ```json
 {
     "success": false,
-    "error": {
-        "code": "server"
-    }
+    "errors": [
+        {
+            "code": "server"
+        }
+    ]
 }
 ```
 
