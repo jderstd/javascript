@@ -6,7 +6,7 @@
 type JsonResponseError = object;
 ```
 
-Defined in: [@types/response.ts:8](https://github.com/jder-std/core.js/blob/ccb6f2fa28b92969dcb767a05c1efbaf6bcd3154/package/src/@types/response.ts#L8)
+Defined in: [@types/response.ts:8](https://github.com/jder-std/core.js/blob/fa0b9604b54acf53ee32ab0dac79b01444945478/package/src/@types/response.ts#L8)
 
 JSON response error.
 
@@ -18,21 +18,9 @@ JSON response error.
 code: string;
 ```
 
-Defined in: [@types/response.ts:10](https://github.com/jder-std/core.js/blob/ccb6f2fa28b92969dcb767a05c1efbaf6bcd3154/package/src/@types/response.ts#L10)
+Defined in: [@types/response.ts:10](https://github.com/jder-std/core.js/blob/fa0b9604b54acf53ee32ab0dac79b01444945478/package/src/@types/response.ts#L10)
 
-Error code.
-
-***
-
-### field?
-
-```ts
-optional field: string;
-```
-
-Defined in: [@types/response.ts:12](https://github.com/jder-std/core.js/blob/ccb6f2fa28b92969dcb767a05c1efbaf6bcd3154/package/src/@types/response.ts#L12)
-
-Field of the error.
+Code representing the error.
 
 ***
 
@@ -42,6 +30,18 @@ Field of the error.
 optional message: string;
 ```
 
-Defined in: [@types/response.ts:14](https://github.com/jder-std/core.js/blob/ccb6f2fa28b92969dcb767a05c1efbaf6bcd3154/package/src/@types/response.ts#L14)
+Defined in: [@types/response.ts:14](https://github.com/jder-std/core.js/blob/fa0b9604b54acf53ee32ab0dac79b01444945478/package/src/@types/response.ts#L14)
 
-Message of the error.
+Detail of the error.
+
+***
+
+### path?
+
+```ts
+optional path: string[];
+```
+
+Defined in: [@types/response.ts:12](https://github.com/jder-std/core.js/blob/fa0b9604b54acf53ee32ab0dac79b01444945478/package/src/@types/response.ts#L12)
+
+Indicates where the error occurred.
