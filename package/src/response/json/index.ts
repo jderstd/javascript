@@ -40,10 +40,13 @@ type CreateJsonResponseOptions<D = unknown> =
  *
  * const route = (): Response => {
  *     return createJsonResponse({
- *         error: {
- *             code: "server",
- *             message: "Internal server error",
- *         },
+ *         status: 500,
+ *         errors: [
+ *             {
+ *                 code: "server",
+ *                 message: "Internal server error",
+ *             },
+ *         ],
  *     });
  * };
  * ```

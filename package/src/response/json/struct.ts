@@ -28,9 +28,9 @@ type CreateJsonSuccessResponseStructOptions<D = unknown> = {
      */
     data?: D;
     /**
-     * Error for the response when `success` is `false`.
+     * A list of errors for the response when `success` is `false`.
      */
-    error?: never;
+    errors?: never;
 };
 
 type CreateJsonFailureResponseStructOptions = {
@@ -53,9 +53,9 @@ type CreateJsonFailureResponseStructOptions = {
      */
     data?: never;
     /**
-     * Error for the response when `success` is `false`.
+     * A list of errors for the response when `success` is `false`.
      */
-    error: JsonResponseError;
+    errors: JsonResponseError[];
 };
 
 /** Options of `createJsonResponseStruct` function. */
@@ -79,8 +79,8 @@ const isResponseSuccess = <D>(
 ): boolean => {
     // blank options
     if (!options) return true;
-    // error specified
-    if ("error" in options && typeof options.error === "object") return false;
+    // errors specified
+    if ("errors" in options && Array.isArray(options.errors)) return false;
     // default
     return true;
 };
@@ -111,7 +111,8 @@ const createJsonResponseStruct = <D = unknown>(
           }
         : {
               success: false,
-              error: (options as CreateJsonFailureResponseStructOptions).error,
+              errors: (options as CreateJsonFailureResponseStructOptions)
+                  .errors,
           };
 
     return {

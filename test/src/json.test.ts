@@ -1,4 +1,4 @@
-import { createJsonResponse } from "@jderjs/core";
+import { createJsonResponse, type JsonResponse } from "@jderjs/core";
 import { describe, expect, it } from "vitest";
 
 describe("createJsonResponse test", (): void => {
@@ -11,7 +11,7 @@ describe("createJsonResponse test", (): void => {
 
         expect(JSON.parse(body)).toStrictEqual({
             success: true,
-        });
+        } satisfies JsonResponse);
     });
 
     it("should work with data", async (): Promise<void> => {
@@ -30,14 +30,16 @@ describe("createJsonResponse test", (): void => {
             data: {
                 message: "Hello, World!",
             },
-        });
+        } satisfies JsonResponse);
     });
 
     it("should work as failure", async (): Promise<void> => {
         const res: Response = createJsonResponse({
-            error: {
-                code: "server",
-            },
+            errors: [
+                {
+                    code: "server",
+                },
+            ],
         });
 
         expect(res.status).toBe(400);
@@ -46,18 +48,22 @@ describe("createJsonResponse test", (): void => {
 
         expect(JSON.parse(body)).toStrictEqual({
             success: false,
-            error: {
-                code: "server",
-            },
-        });
+            errors: [
+                {
+                    code: "server",
+                },
+            ],
+        } satisfies JsonResponse);
     });
 
     it("should work as failure with success: false", async (): Promise<void> => {
         const res: Response = createJsonResponse({
             success: false,
-            error: {
-                code: "server",
-            },
+            errors: [
+                {
+                    code: "server",
+                },
+            ],
         });
 
         expect(res.status).toBe(400);
@@ -66,10 +72,12 @@ describe("createJsonResponse test", (): void => {
 
         expect(JSON.parse(body)).toStrictEqual({
             success: false,
-            error: {
-                code: "server",
-            },
-        });
+            errors: [
+                {
+                    code: "server",
+                },
+            ],
+        } satisfies JsonResponse);
     });
 
     it("should work with customization", async (): Promise<void> => {
@@ -82,11 +90,15 @@ describe("createJsonResponse test", (): void => {
                     "test",
                 ],
             ],
-            error: {
-                code: "server",
-                field: "server",
-                message: "server",
-            },
+            errors: [
+                {
+                    code: "server",
+                    path: [
+                        "server",
+                    ],
+                    message: "server",
+                },
+            ],
         });
 
         expect(res.status).toBe(500);
@@ -97,11 +109,15 @@ describe("createJsonResponse test", (): void => {
 
         expect(JSON.parse(body)).toStrictEqual({
             success: false,
-            error: {
-                code: "server",
-                field: "server",
-                message: "server",
-            },
-        });
+            errors: [
+                {
+                    code: "server",
+                    path: [
+                        "server",
+                    ],
+                    message: "server",
+                },
+            ],
+        } satisfies JsonResponse);
     });
 });
