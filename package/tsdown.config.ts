@@ -14,7 +14,7 @@ const options: Options = {
     dts: false,
     outDir: "./dist",
     clean: true,
-    platform: "browser",
+    platform: "neutral",
     treeshake: true,
     sourcemap: true,
     minify: false,
