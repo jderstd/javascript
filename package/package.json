@@ -11,11 +11,11 @@
         "js",
         "javascript"
     ],
-    "homepage": "https://github.com/jder-std/core.js",
-    "bugs": "https://github.com/jder-std/core.js/issues",
+    "homepage": "https://github.com/jderstd/core.js",
+    "bugs": "https://github.com/jderstd/core.js/issues",
     "repository": {
         "type": "git",
-        "url": "https://github.com/jder-std/core.js.git",
+        "url": "https://github.com/jderstd/core.js.git",
         "directory": "package"
     },
     "license": "MIT",
