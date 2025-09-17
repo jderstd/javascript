@@ -6,7 +6,7 @@
 type CreateJsonResponseOptions<D> = CreateJsonResponseStructOptions<D>;
 ```
 
-Defined in: [response/json/index.ts:6](https://github.com/jder-std/core.js/blob/fa0b9604b54acf53ee32ab0dac79b01444945478/package/src/response/json/index.ts#L6)
+Defined in: [response/json/index.ts:6](https://github.com/jderstd/core.js/blob/88b7c6e9a21520763360f335ecab84107f81b456/package/src/response/json/index.ts#L6)
 
 Options of `createJsonResponse` function.
 
