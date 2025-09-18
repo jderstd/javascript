@@ -2,3 +2,9 @@ packages:
     - ./package
     - ./test
     - ./example
+
+minimumReleaseAge: 1440
+
+minimumReleaseAgeExclude:
+    - "@apst/biome"
+    - "@apst/tsconfig"
