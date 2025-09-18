@@ -15,3 +15,7 @@ updates:
           - dependency-name: "typedoc-plugin-markdown"
           - dependency-name: "typescript"
           - dependency-name: "vitest"
+      cooldown:
+          default-days: 1
+          include:
+              - "*"
