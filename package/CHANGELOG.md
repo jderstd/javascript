@@ -1,3 +1,13 @@
+## 0.4.0
+
+### Breaking Changes
+
+- Rename package from `@jderjs/core` to `@jderstd/core`
+
+### What's Changed
+
+- Update documentation
+
 ## 0.3.0 (2025-08-13)
 
 ### Breaking Changes

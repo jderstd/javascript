@@ -7,7 +7,7 @@
         "": ""
     },
     "dependencies": {
-        "@jderjs/core": "workspace:~",
+        "@jderstd/core": "workspace:~",
         "vitest": "^3.2.4"
     }
 }

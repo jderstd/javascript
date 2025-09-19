@@ -1,4 +1,4 @@
-[@jderjs/core](../README.md) / createJsonResponse
+[@jderstd/core](../README.md) / createJsonResponse
 
 # Function: createJsonResponse()
 
@@ -6,7 +6,7 @@
 function createJsonResponse<D>(options?): Response;
 ```
 
-Defined in: [response/json/index.ts:54](https://github.com/jderstd/core.js/blob/88b7c6e9a21520763360f335ecab84107f81b456/package/src/response/json/index.ts#L54)
+Defined in: [response/json/index.ts:54](https://github.com/jderstd/core.js/blob/7c2ca31959b987ff3d948220b721ea46e9c159a4/package/src/response/json/index.ts#L54)
 
 Create a JSON response.
 
@@ -15,7 +15,7 @@ Create a JSON response.
 Example for creating a successful JSON response without data:
 
 ```ts
-import { createJsonResponse } from "@jderjs/core";
+import { createJsonResponse } from "@jderstd/core";
 
 const route = (): Response => {
     return createJsonResponse();
@@ -25,7 +25,7 @@ const route = (): Response => {
 Example for creating a successful JSON response with data:
 
 ```ts
-import { createJsonResponse } from "@jderjs/core";
+import { createJsonResponse } from "@jderstd/core";
 
 const route = (): Response => {
     return createJsonResponse({
@@ -37,7 +37,7 @@ const route = (): Response => {
 Example for creating a failure JSON response:
 
 ```ts
-import { createJsonResponse } from "@jderjs/core";
+import { createJsonResponse } from "@jderstd/core";
 
 const route = (): Response => {
     return createJsonResponse({

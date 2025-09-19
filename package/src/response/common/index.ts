@@ -14,7 +14,7 @@ type CreateResponseOptions<B extends BodyInit = BodyInit> =
  * Example for creating a basic response:
  *
  * ```ts
- * import { createResponse } from "@jderjs/core";
+ * import { createResponse } from "@jderstd/core";
  *
  * const route = (): Response => {
  *     return createResponse();
@@ -24,7 +24,7 @@ type CreateResponseOptions<B extends BodyInit = BodyInit> =
  * Example for creating a response with status, headers, and body:
  *
  * ```ts
- * import { createResponse } from "@jderjs/core";
+ * import { createResponse } from "@jderstd/core";
  *
  * const route = (): Response => {
  *     return createResponse({

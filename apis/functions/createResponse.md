@@ -1,4 +1,4 @@
-[@jderjs/core](../README.md) / createResponse
+[@jderstd/core](../README.md) / createResponse
 
 # Function: createResponse()
 
@@ -6,7 +6,7 @@
 function createResponse<B>(options?): Response;
 ```
 
-Defined in: [response/common/index.ts:40](https://github.com/jderstd/core.js/blob/88b7c6e9a21520763360f335ecab84107f81b456/package/src/response/common/index.ts#L40)
+Defined in: [response/common/index.ts:40](https://github.com/jderstd/core.js/blob/7c2ca31959b987ff3d948220b721ea46e9c159a4/package/src/response/common/index.ts#L40)
 
 Create a response.
 
@@ -15,7 +15,7 @@ Create a response.
 Example for creating a basic response:
 
 ```ts
-import { createResponse } from "@jderjs/core";
+import { createResponse } from "@jderstd/core";
 
 const route = (): Response => {
     return createResponse();
@@ -25,7 +25,7 @@ const route = (): Response => {
 Example for creating a response with status, headers, and body:
 
 ```ts
-import { createResponse } from "@jderjs/core";
+import { createResponse } from "@jderstd/core";
 
 const route = (): Response => {
     return createResponse({
