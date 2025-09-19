@@ -8,7 +8,7 @@ tsdown := node_bin + "tsdown"
 vitest := node_bin + "vitest"
 typedoc := node_bin + "typedoc"
 
-pkg := "package"
+pkg := "packages/core"
 
 tst := "test"
 
@@ -32,7 +32,7 @@ setup:
 lint:
     ls-lint
     typos
-    cd ./{{pkg}} && ../{{tsc}} --noEmit
+    cd ./{{pkg}} && ../../{{tsc}} --noEmit
 
 # Format code
 fmt:
@@ -40,7 +40,7 @@ fmt:
 
 # Build package
 build:
-    cd ./{{pkg}} && ../{{tsdown}} -c tsdown.config.ts
+    cd ./{{pkg}} && ../../{{tsdown}} -c tsdown.config.ts
 
 # Run tests
 test:
@@ -54,7 +54,7 @@ test-all:
 
 # Generate APIs documentation
 api:
-    cd ./{{pkg}} && ../{{typedoc}}
+    cd ./{{pkg}} && ../../{{typedoc}}
 
 # Publish package with dev tag as dry-run
 publish-dev-try:
