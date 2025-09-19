@@ -1,6 +1,6 @@
-import type { HeaderTuple } from "@jderjs/core";
+import type { HeaderTuple } from "@jderstd/core";
 
-import { mergeHeaders } from "@jderjs/core/functions/merge-headers";
+import { mergeHeaders } from "@jderstd/core/functions/merge-headers";
 import { describe, expect, it } from "vitest";
 
 describe("mergeHeaders test", (): void => {

@@ -38,7 +38,7 @@ importers:
 
   test:
     dependencies:
-      '@jderjs/core':
+      '@jderstd/core':
         specifier: workspace:~
         version: link:../package
       vitest:

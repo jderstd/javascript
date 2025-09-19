@@ -1,4 +1,4 @@
-[@jderjs/core](../README.md) / CreateResponseOptions
+[@jderstd/core](../README.md) / CreateResponseOptions
 
 # Type Alias: CreateResponseOptions\<B\>
 
@@ -6,7 +6,7 @@
 type CreateResponseOptions<B> = CreateResponseStructOptions<B>;
 ```
 
-Defined in: [response/common/index.ts:6](https://github.com/jderstd/core.js/blob/88b7c6e9a21520763360f335ecab84107f81b456/package/src/response/common/index.ts#L6)
+Defined in: [response/common/index.ts:6](https://github.com/jderstd/core.js/blob/7c2ca31959b987ff3d948220b721ea46e9c159a4/package/src/response/common/index.ts#L6)
 
 Options of `createResponse` function.
 

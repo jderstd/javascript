@@ -1,4 +1,4 @@
-[@jderjs/core](../README.md) / JsonResponse
+[@jderstd/core](../README.md) / JsonResponse
 
 # Type Alias: JsonResponse\<D\>
 
@@ -6,7 +6,7 @@
 type JsonResponse<D> = object;
 ```
 
-Defined in: [@types/response.ts:18](https://github.com/jderstd/core.js/blob/88b7c6e9a21520763360f335ecab84107f81b456/package/src/@types/response.ts#L18)
+Defined in: [@types/response.ts:18](https://github.com/jderstd/core.js/blob/7c2ca31959b987ff3d948220b721ea46e9c159a4/package/src/@types/response.ts#L18)
 
 JSON response.
 
@@ -24,7 +24,7 @@ JSON response.
 optional data: D;
 ```
 
-Defined in: [@types/response.ts:22](https://github.com/jderstd/core.js/blob/88b7c6e9a21520763360f335ecab84107f81b456/package/src/@types/response.ts#L22)
+Defined in: [@types/response.ts:22](https://github.com/jderstd/core.js/blob/7c2ca31959b987ff3d948220b721ea46e9c159a4/package/src/@types/response.ts#L22)
 
 Requested information for the response when `success` is `true`.
 
@@ -36,7 +36,7 @@ Requested information for the response when `success` is `true`.
 optional errors: JsonResponseError[];
 ```
 
-Defined in: [@types/response.ts:24](https://github.com/jderstd/core.js/blob/88b7c6e9a21520763360f335ecab84107f81b456/package/src/@types/response.ts#L24)
+Defined in: [@types/response.ts:24](https://github.com/jderstd/core.js/blob/7c2ca31959b987ff3d948220b721ea46e9c159a4/package/src/@types/response.ts#L24)
 
 A list of errors for the response when `success` is `false`.
 
@@ -48,6 +48,6 @@ A list of errors for the response when `success` is `false`.
 success: boolean;
 ```
 
-Defined in: [@types/response.ts:20](https://github.com/jderstd/core.js/blob/88b7c6e9a21520763360f335ecab84107f81b456/package/src/@types/response.ts#L20)
+Defined in: [@types/response.ts:20](https://github.com/jderstd/core.js/blob/7c2ca31959b987ff3d948220b721ea46e9c159a4/package/src/@types/response.ts#L20)
 
 Indicates whether the response is successful or not.

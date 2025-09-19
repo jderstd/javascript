@@ -1,4 +1,4 @@
-[@jderjs/core](../README.md) / CreateJsonResponseOptions
+[@jderstd/core](../README.md) / CreateJsonResponseOptions
 
 # Type Alias: CreateJsonResponseOptions\<D\>
 
@@ -6,7 +6,7 @@
 type CreateJsonResponseOptions<D> = CreateJsonResponseStructOptions<D>;
 ```
 
-Defined in: [response/json/index.ts:6](https://github.com/jderstd/core.js/blob/88b7c6e9a21520763360f335ecab84107f81b456/package/src/response/json/index.ts#L6)
+Defined in: [response/json/index.ts:6](https://github.com/jderstd/core.js/blob/7c2ca31959b987ff3d948220b721ea46e9c159a4/package/src/response/json/index.ts#L6)
 
 Options of `createJsonResponse` function.
 

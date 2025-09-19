@@ -10,19 +10,19 @@ Install this package as a dependency in the project:
 
 ```sh
 # npm
-npm i @jderjs/core
+npm i @jderstd/core
 
 # Yarn
-yarn add @jderjs/core
+yarn add @jderstd/core
 
 # pnpm
-pnpm add @jderjs/core
+pnpm add @jderstd/core
 
 # Deno
-deno add npm:@jderjs/core
+deno add npm:@jderstd/core
 
 # Bun
-bun add @jderjs/core
+bun add @jderstd/core
 ```
 
 ## Quick Start
@@ -30,7 +30,7 @@ bun add @jderjs/core
 To create a JSON response, use the following code:
 
 ```ts
-import { createJsonResponse } from "@jderjs/core";
+import { createJsonResponse } from "@jderstd/core";
 
 const route = (): Response => {
     return createJsonResponse();

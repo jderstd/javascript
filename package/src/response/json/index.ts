@@ -14,7 +14,7 @@ type CreateJsonResponseOptions<D = unknown> =
  * Example for creating a successful JSON response without data:
  *
  * ```ts
- * import { createJsonResponse } from "@jderjs/core";
+ * import { createJsonResponse } from "@jderstd/core";
  *
  * const route = (): Response => {
  *     return createJsonResponse();
@@ -24,7 +24,7 @@ type CreateJsonResponseOptions<D = unknown> =
  * Example for creating a successful JSON response with data:
  *
  * ```ts
- * import { createJsonResponse } from "@jderjs/core";
+ * import { createJsonResponse } from "@jderstd/core";
  *
  * const route = (): Response => {
  *     return createJsonResponse({
@@ -36,7 +36,7 @@ type CreateJsonResponseOptions<D = unknown> =
  * Example for creating a failure JSON response:
  *
  * ```ts
- * import { createJsonResponse } from "@jderjs/core";
+ * import { createJsonResponse } from "@jderstd/core";
  *
  * const route = (): Response => {
  *     return createJsonResponse({

@@ -1,4 +1,4 @@
-import { createResponse } from "@jderjs/core";
+import { createResponse } from "@jderstd/core";
 import { describe, expect, it } from "vitest";
 
 describe("createResponse test", (): void => {

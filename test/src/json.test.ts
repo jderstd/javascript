@@ -1,4 +1,6 @@
-import { createJsonResponse, type JsonResponse } from "@jderjs/core";
+import type { JsonResponse } from "@jderstd/core";
+
+import { createJsonResponse } from "@jderstd/core";
 import { describe, expect, it } from "vitest";
 
 describe("createJsonResponse test", (): void => {

@@ -12,19 +12,19 @@ Install this package as a dependency in the project:
 
 ```sh
 # npm
-npm i @jderjs/core
+npm i @jderstd/core
 
 # Yarn
-yarn add @jderjs/core
+yarn add @jderstd/core
 
 # pnpm
-pnpm add @jderjs/core
+pnpm add @jderstd/core
 
 # Deno
-deno add npm:@jderjs/core
+deno add npm:@jderstd/core
 
 # Bun
-bun add @jderjs/core
+bun add @jderstd/core
 ```
 
 ## Create a Success JSON Response
@@ -32,7 +32,7 @@ bun add @jderjs/core
 To create a JSON response without data, just use `createJsonResponse` function:
 
 ```ts
-import { createJsonResponse } from "@jderjs/core";
+import { createJsonResponse } from "@jderstd/core";
 
 const route = (): Response => {
     return createJsonResponse();
@@ -52,7 +52,7 @@ And the response will be shown as below:
 The `createJsonResponse` function can also be used to insert data to the response:
 
 ```ts
-import { createJsonResponse } from "@jderjs/core";
+import { createJsonResponse } from "@jderstd/core";
 
 const route = (): Response => {
     return createJsonResponse({
@@ -75,7 +75,7 @@ And the response will be shown as below:
 To create a failure JSON response, add `errors` field to the options:
 
 ```ts
-import { createJsonResponse } from "@jderjs/core";
+import { createJsonResponse } from "@jderstd/core";
 
 const route = (): Response => {
     return createJsonResponse({
@@ -106,7 +106,7 @@ And the response will be shown as below:
 To create a non-JSON response, use `createResponse` function:
 
 ```ts
-import { createResponse } from "@jderjs/core";
+import { createResponse } from "@jderstd/core";
 
 const route = (): Response => {
     return createResponse({
