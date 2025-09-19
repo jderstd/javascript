@@ -9,7 +9,7 @@ export const load = (app) => {
     app.renderer.on(MarkdownPageEvent.END, insert);
 };
 
-const pkg = path.resolve(process.cwd(), "..", "..", "apis", "README.md");
+const pkg = path.resolve(process.cwd(), "..", "apis", "README.md");
 
 /**
  * @param {import("typedoc-plugin-markdown").MarkdownPageEvent} page

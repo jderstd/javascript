@@ -4,11 +4,11 @@
         "./src/index.ts"
     ],
     "includeVersion": true,
-    "out": "./../../apis",
+    "out": "../apis",
     "cleanOutputDir": true,
     "plugin": [
         "typedoc-plugin-markdown",
-        "./../../scripts/insert-link.js"
+        "../scripts/insert-link.js"
     ],
     "readme": "none",
     "entryFileName": "README",
