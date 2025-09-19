@@ -16,7 +16,7 @@
     "repository": {
         "type": "git",
         "url": "https://github.com/jderstd/javascript.git",
-        "directory": "packages/core"
+        "directory": "package"
     },
     "license": "MIT",
     "author": {
