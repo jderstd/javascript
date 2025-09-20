@@ -6,7 +6,6 @@
 
 ### What's Changed
 
-- Remove `ts-vista`
 - Update documentation
 
 ## 0.3.0 (2025-08-13)
