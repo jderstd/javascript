@@ -1,3 +1,5 @@
+import type { Format } from "ts-vista";
+
 import type {
     HeaderTuple,
     JsonResponse,
@@ -57,9 +59,10 @@ type CreateJsonFailureResponseStructOptions = {
 };
 
 /** Options of `createJsonResponseStruct` function. */
-type CreateJsonResponseStructOptions<D = unknown> =
+type CreateJsonResponseStructOptions<D = unknown> = Format<
     | CreateJsonSuccessResponseStructOptions<D>
-    | CreateJsonFailureResponseStructOptions;
+    | CreateJsonFailureResponseStructOptions
+>;
 
 /** JSON Response structure. */
 type JsonResponseStruct<D = unknown> = {
