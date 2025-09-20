@@ -51,8 +51,5 @@
     "types": "./dist/index.d.ts",
     "files": [
         "dist"
-    ],
-    "dependencies": {
-        "ts-vista": "~0.2.2"
-    }
+    ]
 }
