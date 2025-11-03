@@ -8,6 +8,6 @@
     },
     "dependencies": {
         "@jderstd/core": "workspace:~",
-        "vitest": "^4.0.5"
+        "vitest": "^4.0.6"
     }
 }
