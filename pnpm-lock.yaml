@@ -36,8 +36,8 @@ importers:
   package:
     dependencies:
       ts-vista:
-        specifier: ~0.2.2
-        version: 0.2.2
+        specifier: ~0.2.3
+        version: 0.2.3
 
   test:
     dependencies:
@@ -829,8 +829,8 @@ packages:
     resolution: {integrity: sha512-L0Orpi8qGpRG//Nd+H90vFB+3iHnue1zSSGmNOOCh1GLJ7rUKVwV2HvijphGQS2UmhUZewS9VgvxYIdgr+fG1A==}
     hasBin: true
 
-  ts-vista@0.2.2:
-    resolution: {integrity: sha512-QhuUrGs8WwGgHy1iUOfMztvLE0XB3EH4hFjw6rFGpStav5os7keIx9EHfJTBSpaPdlE3MmGBwVFAbTjDjROFuQ==}
+  ts-vista@0.2.3:
+    resolution: {integrity: sha512-aXdjXqE2ReXVauZTVDfA4Dl5StYID/kS9Z+uUBLJIhdU2oNQC/A33aMj9zeVJCd3fn0UtT8Wj+PAMCRASirkwg==}
 
   tsdown@0.18.1:
     resolution: {integrity: sha512-na4MdVA8QS9Zw++0KovGpjvw1BY5WvoCWcE4Aw0dyfff9nWK8BPzniQEVs+apGUg3DHaYMDfs+XiFaDDgqDDzQ==}
@@ -1589,7 +1589,7 @@ snapshots:
 
   tree-kill@1.2.2: {}
 
-  ts-vista@0.2.2: {}
+  ts-vista@0.2.3: {}
 
   tsdown@0.18.1(typescript@5.9.3):
     dependencies:
