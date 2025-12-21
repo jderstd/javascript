@@ -1,40 +1,24 @@
-import type { UserConfig } from "tsdown";
+import { defineConfig } from "@apst/tsdown";
+import { cjsPreset, dtsPreset, esmPreset } from "@apst/tsdown/presets";
 
-import { defineConfig } from "tsdown";
-
-const options: UserConfig = {
-    entry: {
-        // public
-        index: "./src/index.ts",
-        // internal
-        "response/common/struct": "./src/response/common/struct.ts",
-        "response/json/struct": "./src/response/json/struct.ts",
-        "functions/merge-headers": "./src/functions/merge-headers.ts",
-    },
-    dts: false,
-    outDir: "./dist",
-    clean: true,
-    platform: "neutral",
-    treeshake: true,
-    sourcemap: true,
-    minify: false,
-    shims: true,
-    unbundle: true,
-    inputOptions: {
-        experimental: {
-            attachDebugInfo: "none",
+export default defineConfig(
+    {
+        entry: {
+            // public
+            index: "./src/index.ts",
+            // internal
+            "response/common/struct": "./src/response/common/struct.ts",
+            "response/json/struct": "./src/response/json/struct.ts",
+            "functions/merge-headers": "./src/functions/merge-headers.ts",
         },
     },
-};
-
-export default defineConfig([
-    {
-        ...options,
-        format: "esm",
-    },
-    {
-        ...options,
-        dts: true,
-        format: "cjs",
-    },
-]);
+    [
+        cjsPreset(),
+        esmPreset(),
+        dtsPreset({
+            presetOptions: {
+                performanceMode: true,
+            }
+        }),
+    ],
+);
