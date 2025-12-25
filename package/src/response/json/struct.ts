@@ -4,6 +4,7 @@ import type {
     HeaderTuple,
     JsonResponse,
     JsonResponseError,
+    JsonResponseErrorInput,
 } from "#/@types/response";
 
 import { mergeHeaders } from "#/functions/merge-headers";
@@ -55,7 +56,7 @@ type CreateJsonFailureResponseStructOptions = {
     /**
      * A list of errors for the response when `success` is `false`.
      */
-    errors: JsonResponseError[];
+    errors: JsonResponseErrorInput[];
 };
 
 /** Options of `createJsonResponseStruct` function. */
@@ -103,16 +104,23 @@ const createJsonResponseStruct = <D = unknown>(
     const json: JsonResponse<D> = isSuccess
         ? {
               success: true,
-              data: (
-                  options as
-                      | CreateJsonSuccessResponseStructOptions<D>
-                      | undefined
-              )?.data,
+              data:
+                  (options as CreateJsonSuccessResponseStructOptions<D> | null)
+                      ?.data ?? null,
+              errors: [],
           }
         : {
               success: false,
-              errors: (options as CreateJsonFailureResponseStructOptions)
-                  .errors,
+              data: null,
+              errors: (
+                  options as CreateJsonFailureResponseStructOptions
+              ).errors.map(
+                  (e: JsonResponseErrorInput): JsonResponseError => ({
+                      code: e.code,
+                      path: e.path ?? [],
+                      message: e.message ?? null,
+                  }),
+              ),
           };
 
     return {

@@ -1,3 +1,5 @@
+import type { Format, Partial } from "ts-vista";
+
 /** Header tuple. */
 type HeaderTuple = [
     string,
@@ -9,19 +11,29 @@ type JsonResponseError = {
     /** Code representing the error. */
     code: string;
     /** Indicates where the error occurred. */
-    path?: string[];
+    path: string[];
     /** Detail of the error. */
-    message?: string;
+    message: string | null;
 };
+
+/** Input type for JSON response error. */
+type JsonResponseErrorInput = Format<
+    Partial<JsonResponseError, "path" | "message">
+>;
 
 /** JSON response. */
 type JsonResponse<D = unknown> = {
     /** Indicates whether the response is successful or not. */
     success: boolean;
     /** Requested information for the response when `success` is `true`. */
-    data?: D;
+    data: D | null;
     /** A list of errors for the response when `success` is `false`. */
-    errors?: JsonResponseError[];
+    errors: JsonResponseError[];
 };
 
-export type { HeaderTuple, JsonResponseError, JsonResponse };
+export type {
+    HeaderTuple,
+    JsonResponseError,
+    JsonResponseErrorInput,
+    JsonResponse,
+};
