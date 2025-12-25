@@ -1,6 +1,6 @@
 [< Back](./../README.md)
 
-# @jderstd/core v0.4.0
+# @jderstd/core v0.5.0
 
 ## Type Aliases
 
@@ -11,6 +11,7 @@
 | [HeaderTuple](type-aliases/HeaderTuple.md) | Header tuple. |
 | [JsonResponse](type-aliases/JsonResponse.md) | JSON response. |
 | [JsonResponseError](type-aliases/JsonResponseError.md) | JSON response error. |
+| [JsonResponseErrorInput](type-aliases/JsonResponseErrorInput.md) | Input type for JSON response error. |
 
 ## Functions
 

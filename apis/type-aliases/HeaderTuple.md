@@ -6,6 +6,6 @@
 type HeaderTuple = [string, string];
 ```
 
-Defined in: [@types/response.ts:2](https://github.com/jderstd/javascript/blob/8f7bfc8df2a1c6e65ff47e746ac4d85e2344f847/package/src/@types/response.ts#L2)
+Defined in: [@types/response.ts:4](https://github.com/jderstd/javascript/blob/0e17f47863a5f2f0e1f89f9da9574224cbe654ad/package/src/@types/response.ts#L4)
 
 Header tuple.

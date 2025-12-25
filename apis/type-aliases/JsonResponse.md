@@ -6,7 +6,7 @@
 type JsonResponse<D> = object;
 ```
 
-Defined in: [@types/response.ts:18](https://github.com/jderstd/javascript/blob/8f7bfc8df2a1c6e65ff47e746ac4d85e2344f847/package/src/@types/response.ts#L18)
+Defined in: [@types/response.ts:25](https://github.com/jderstd/javascript/blob/0e17f47863a5f2f0e1f89f9da9574224cbe654ad/package/src/@types/response.ts#L25)
 
 JSON response.
 
@@ -18,25 +18,25 @@ JSON response.
 
 ## Properties
 
-### data?
+### data
 
 ```ts
-optional data: D;
+data: D | null;
 ```
 
-Defined in: [@types/response.ts:22](https://github.com/jderstd/javascript/blob/8f7bfc8df2a1c6e65ff47e746ac4d85e2344f847/package/src/@types/response.ts#L22)
+Defined in: [@types/response.ts:29](https://github.com/jderstd/javascript/blob/0e17f47863a5f2f0e1f89f9da9574224cbe654ad/package/src/@types/response.ts#L29)
 
 Requested information for the response when `success` is `true`.
 
 ***
 
-### errors?
+### errors
 
 ```ts
-optional errors: JsonResponseError[];
+errors: JsonResponseError[];
 ```
 
-Defined in: [@types/response.ts:24](https://github.com/jderstd/javascript/blob/8f7bfc8df2a1c6e65ff47e746ac4d85e2344f847/package/src/@types/response.ts#L24)
+Defined in: [@types/response.ts:31](https://github.com/jderstd/javascript/blob/0e17f47863a5f2f0e1f89f9da9574224cbe654ad/package/src/@types/response.ts#L31)
 
 A list of errors for the response when `success` is `false`.
 
@@ -48,6 +48,6 @@ A list of errors for the response when `success` is `false`.
 success: boolean;
 ```
 
-Defined in: [@types/response.ts:20](https://github.com/jderstd/javascript/blob/8f7bfc8df2a1c6e65ff47e746ac4d85e2344f847/package/src/@types/response.ts#L20)
+Defined in: [@types/response.ts:27](https://github.com/jderstd/javascript/blob/0e17f47863a5f2f0e1f89f9da9574224cbe654ad/package/src/@types/response.ts#L27)
 
 Indicates whether the response is successful or not.

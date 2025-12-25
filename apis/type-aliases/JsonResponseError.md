@@ -6,7 +6,7 @@
 type JsonResponseError = object;
 ```
 
-Defined in: [@types/response.ts:8](https://github.com/jderstd/javascript/blob/8f7bfc8df2a1c6e65ff47e746ac4d85e2344f847/package/src/@types/response.ts#L8)
+Defined in: [@types/response.ts:10](https://github.com/jderstd/javascript/blob/0e17f47863a5f2f0e1f89f9da9574224cbe654ad/package/src/@types/response.ts#L10)
 
 JSON response error.
 
@@ -18,30 +18,30 @@ JSON response error.
 code: string;
 ```
 
-Defined in: [@types/response.ts:10](https://github.com/jderstd/javascript/blob/8f7bfc8df2a1c6e65ff47e746ac4d85e2344f847/package/src/@types/response.ts#L10)
+Defined in: [@types/response.ts:12](https://github.com/jderstd/javascript/blob/0e17f47863a5f2f0e1f89f9da9574224cbe654ad/package/src/@types/response.ts#L12)
 
 Code representing the error.
 
 ***
 
-### message?
+### message
 
 ```ts
-optional message: string;
+message: string | null;
 ```
 
-Defined in: [@types/response.ts:14](https://github.com/jderstd/javascript/blob/8f7bfc8df2a1c6e65ff47e746ac4d85e2344f847/package/src/@types/response.ts#L14)
+Defined in: [@types/response.ts:16](https://github.com/jderstd/javascript/blob/0e17f47863a5f2f0e1f89f9da9574224cbe654ad/package/src/@types/response.ts#L16)
 
 Detail of the error.
 
 ***
 
-### path?
+### path
 
 ```ts
-optional path: string[];
+path: string[];
 ```
 
-Defined in: [@types/response.ts:12](https://github.com/jderstd/javascript/blob/8f7bfc8df2a1c6e65ff47e746ac4d85e2344f847/package/src/@types/response.ts#L12)
+Defined in: [@types/response.ts:14](https://github.com/jderstd/javascript/blob/0e17f47863a5f2f0e1f89f9da9574224cbe654ad/package/src/@types/response.ts#L14)
 
 Indicates where the error occurred.

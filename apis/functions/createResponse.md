@@ -6,7 +6,7 @@
 function createResponse<B>(options?): Response;
 ```
 
-Defined in: [response/common/index.ts:40](https://github.com/jderstd/javascript/blob/8f7bfc8df2a1c6e65ff47e746ac4d85e2344f847/package/src/response/common/index.ts#L40)
+Defined in: [response/common/index.ts:40](https://github.com/jderstd/javascript/blob/0e17f47863a5f2f0e1f89f9da9574224cbe654ad/package/src/response/common/index.ts#L40)
 
 Create a response.
 
