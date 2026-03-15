@@ -11,6 +11,7 @@ export default defineConfig(
             "response/json/struct": "./src/response/json/struct.ts",
             "functions/merge-headers": "./src/functions/merge-headers.ts",
         },
+        unbundle: true,
     },
     [
         cjsPreset(),
