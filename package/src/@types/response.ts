@@ -33,7 +33,7 @@ type JsonResponse<D = unknown> = {
 
 export type {
     HeaderTuple,
+    JsonResponse,
     JsonResponseError,
     JsonResponseErrorInput,
-    JsonResponse,
 };
