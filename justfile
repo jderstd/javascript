@@ -14,14 +14,15 @@ tst := "test"
 
 # Default action
 _:
-    just lint
-    just fmt
-    just build
-    just test
+    just --list -u
 
 # Install
 i:
     pnpm install
+
+# Format code
+fmt:
+    {{biome}} check --write .
 
 # Lint code
 lint:
@@ -33,10 +34,6 @@ lint:
 lint-biome:
     {{biome}} lint .
 
-# Format code
-fmt:
-    {{biome}} check --write .
-
 # Build package
 build:
     cd ./{{pkg}} && {{tsdown}} -c tsdown.config.ts
@@ -44,6 +41,13 @@ build:
 # Run tests
 test:
     cd ./{{tst}} && {{vitest}} run
+
+# Check code
+check:
+    just fmt
+    just lint
+    just build
+    just test
 
 # Generate APIs documentation
 api:
@@ -65,12 +69,24 @@ publish-try:
 publish:
     cd ./{{pkg}} && {{publish}}
 
+# Clean builds (Linux)
+clean-linux:
+    rm -rf ./{{pkg}}/dist
+
+# Clean builds (macOS)
+clean-macos:
+    just clean-linux
+
+# Clean builds (Windows)
+clean-windows:
+    Remove-Item -Recurse -Force ./{{pkg}}/dist
+
 # Clean builds
 clean:
-    rm -rf ./package/dist
+    just clean-{{os()}}
 
-# Clean everything
-clean-all:
+# Clean everything (Linux)
+clean-all-linux:
     just clean
 
     rm -rf ./{{tst}}/node_modules
@@ -78,3 +94,21 @@ clean-all:
     rm -rf ./{{pkg}}/node_modules
 
     rm -rf ./node_modules
+
+# Clean everything (macOS)
+clean-all-macos:
+    just clean-all-linux
+
+# Clean everything (Windows)
+clean-all-windows:
+    just clean
+
+    Remove-Item -Recurse -Force ./{{tst}}/node_modules
+
+    Remove-Item -Recurse -Force ./{{pkg}}/node_modules
+
+    Remove-Item -Recurse -Force ./node_modules
+
+# Clean everything
+clean-all:
+    just clean-all-{{os()}}
